@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 
+.clang-format
+.gitignore
 # Object files
 *.o
 *.ko
