@@ -4,8 +4,9 @@
 float foo(float);
 int main(void) {
     float a;
+    char x;
 
-    if (scanf("%f", &a) == 1) {
+    if (scanf("%f%c", &a, &x) == 2 && (x == '\n')) {
         printf("%.1f", foo(a));
     } else {
         printf("n/a");

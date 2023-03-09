@@ -6,9 +6,10 @@ int prod(int, int);
 int div(int, int);
 
 int main(void) {
-    float a, b;
+    int  a, b;
+    char x;
 
-    if ((scanf("%f %f", &a, &b) == 2) && ((int)a == a && (int)b == b)) {
+    if ((scanf("%i %i%c", &a, &b, &x) == 3) && (x == '\n')) {
         printf("%i %i %i ", sum(a, b), diff(a, b), prod(a, b));
         (b != 0) ? printf("%i", div(a, b)) : printf("n/a");
     } else {
